@@ -1,0 +1,76 @@
+// ============== Up to first gate ==============
+
+//reverse all motors and set all motors to 42% power
+reverse(4);
+motorSpeed(4, 42);
+// may need to adjust depending on day/battery
+// motors go for 2.4 seconds, then brake all motors
+goFor(2.4);
+brake(4);
+// set all motors to 0% power for 2 seconds
+motorSpeed(4, 0);
+goFor(2);
+// reverse all motors
+reverse(4);
+// set all motors to 40% power for 1 second
+motorSpeed(4, 40);
+goFor(1);
+
+// ============== Up to caboose ==============
+
+// reverse all motors
+reverse(4);
+// set all motors to 0% power for 7.5 seconds
+motorSpeed(4, 0);
+goFor(7.5);
+// set all motors to 40% power for 3.3 seconds, then brake all motors
+motorSpeed(4, 40);
+goFor(3.3);
+brake(4);
+// set all motors to 0% power for .8 seconds
+motorSpeed(4, 0);
+goFor(.8);
+// reverse all motors
+reverse(4);
+// set all motors to 58% power for 1 second
+motorSpeed(4, 58);
+goFor(1);
+
+// ============== Up to gate second time ==============
+
+// set all motors to 0% power for 7 seconds
+motorSpeed(4, 0);
+goFor(7);
+// set all motors to 70% power for 4 seconds
+motorSpeed(4, 70);
+// may need to adjust depending on day/battery
+// have motors go for 4.5 seconds, then brake all motors
+goFor(4.5);
+brake(4);
+// set all motors to 0% power for 1.5 seconds
+motorSpeed(4, 0);
+goFor(1.5);
+// reverse all motors
+reverse(4);
+// set all motors to 55% power for 1 second
+motorSpeed(4, 55);
+goFor(1);
+
+// ============== Up to the end (original start) ==============
+
+// reverse all motors
+reverse(4);
+// set all motors to 0% power for 7.5 seconds
+motorSpeed(4, 0);
+goFor(7.5);
+// set all motors to 70% power for 4.5 seconds
+motorSpeed(4, 70);
+goFor(4.5);
+// set all motors to 0% power for 2 seconds
+motorSpeed(4, 0);
+goFor(2);
+// reverse all motors
+reverse(4);
+// set all motors to 58% power for 1 second
+motorSpeed(4, 58);
+goFor(1);
